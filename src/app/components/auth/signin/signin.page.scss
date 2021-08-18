@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    top: 3.5rem;
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    &__text {
+        text-align: center;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 2rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+        --ion-item-background: var(--ion-color-light-bg);
+        --padding-top: .1rem;
+        ion-label {
+            margin-left: 1.5rem;
+            color: var(--ion-color-dark);
+            opacity: 60%;
+            font-weight: bold;
+        }
+    }
+    &__btn {
+        width: 90%;
+        height: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+}

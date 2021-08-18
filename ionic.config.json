@@ -1,0 +1,7 @@
+{
+  "name": "SnapShopCustomer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

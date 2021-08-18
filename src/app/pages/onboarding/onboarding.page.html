@@ -1,0 +1,19 @@
+<ion-content>
+    <div class="top-rigth-corner" (click)="goToWelcome()">
+        <p>Skip</p>
+    </div>
+    <ion-slides class="ion-slides-onboarding" pager="true" [options]="slideOpts" #slides>
+        <ion-slide class="slide" *ngFor="let slide of onboardingSlides; let i = index">
+            <div class="slide__content">
+                <img class="slide__content__image" [src]="slide.image" alt="">
+                <h1 class="slide__content__title" [innerHTML]="slide.title"></h1>
+                <p class="slide__content__subtitle" [innerHTML]="slide.content"></p>
+                <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="slideNext(i)">
+                    <ion-fab-button color="light">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </ion-fab-button>
+                </ion-fab>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header class="ion-no-border">
+    <div class="line"></div>
+</ion-header>
+
+<ion-content class="container">
+    <h1 class="title-top container__title">Welcome Back!</h1>
+    <p class="paragraph container__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+    <ion-item class="input container__input" lines="none">
+        <img src="assets/images/flags/usa.svg" alt="">
+        <ion-label>+1</ion-label>
+        <ion-input #inputPhone pattern="[0-9]*" [brmasker]="{mask: '(000) 000 - 0000', len:16}"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="_closeModal()" class="btn-black container__btn">Sign In</ion-button>
+</ion-content>

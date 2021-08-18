@@ -1,0 +1,46 @@
+.container {
+    position: absolute;
+    top: 3.5rem;
+    &__img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 12rem;
+    }
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 2.2rem;
+    }
+    &__text {
+        text-align: center;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__btn {
+        width: 90%;
+        height: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    &__text-skip {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.8rem;
+    }
+    &__text-question {
+        width: 85%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.5rem;
+    }
+}

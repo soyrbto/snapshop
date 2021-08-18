@@ -1,0 +1,41 @@
+/*
+ * App Global CSS
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import 'intl-tel-input-mobile/build/css/intlTelInput.css';
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* Abstracts */
+@import './theme/abstracts/functions';
+@import './theme/abstracts/mixins';
+
+/* Base */
+@import './theme/base/typography';
+@import './theme/base/colors';
+
+/* Helpers */
+@import './theme/helpers/utils';
+
+/* Components */
+@import './theme/components/swippers';
+@import './theme/components/buttons';
+@import './theme/components/modals';
+@import './theme/components/inputs';
+
+* {
+    font-family: 'Poppins', sans-serif;
+}

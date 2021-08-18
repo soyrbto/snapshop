@@ -1,0 +1,73 @@
+/*
+ * Mixins and Rules
+ */
+
+
+/*
+* Breakpoints
+*/
+
+$small_min: 320;
+$small_max: 568;
+$medium_min: 375;
+$medium_max: 667;
+$large_min: 414;
+$large_max: 736;
+$xl_max: 812;
+
+/*
+* Statement of mixins
+*/
+
+@mixin button-style($button-background: "#000", $button-activated: "#000", $button-focused: "#000", $button-hover: "#000", $button-font-color: '#fff', $button-padding-top: auto, $button-padding-bottom: auto, $button-width: 'auto', $button-height: 'auto', $button-font-weight: 'normal', $button-font-size: 14px) {
+    --background: #{$button-background};
+    --background-activated: #{$button-activated};
+    --background-focused: #{$button-focused};
+    --background-hover: #{$button-hover};
+    --color: #{$button-font-color};
+    --paddin-top: #{$button-padding-top};
+    --paddin-bottom: #{$button-padding-bottom};
+    width: $button-width;
+    height: $button-height;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+}
+
+@mixin rwd($screen-min, $screen-max) {
+    @media (min-device-width: $screen-min+'px') and (max-device-width: $screen-max+'px') {
+        @content;
+    }
+}
+
+
+/*
+* Breakpoints Mixins
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-320 {
+      @media (max-width: 320px) {
+        @content;
+      }
+    }
+    @if $breakpoint == phone-360 {
+      @media (max-width: 360px) {
+        @content;
+      }
+    }
+    @if $breakpoint == phone-375 {
+      @media (max-width: 375px) {
+        @content;
+      }
+    }
+    @if $breakpoint == phone-390 {
+      @media (max-width: 390px) {
+        @content;
+      }
+    }
+    @if $breakpoint ==  phone-414 {
+      @media (max-width: 414px) and (max-height: 736px) {
+        @content;
+      }
+    }
+  }

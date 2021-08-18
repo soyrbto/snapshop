@@ -1,0 +1,68 @@
+.line {
+    width: 2.8rem;
+    height: .3rem;
+    border-radius: 10px;
+    background-color: var(--ion-color-dark);
+    opacity: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    position: absolute;
+    top: 3.5rem;
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    &__text {
+        text-align: center;
+        width: 85%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+    &__btn {
+        width: 90%;
+        height: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    &__wrapper {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        &__otp {
+            display: inline-block;
+            width: 55px;
+            height: 50px;
+            margin: 10px;
+            border-bottom: .2rem solid #DBDBDB;
+            --padding-start: 7px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        &__otp-black {
+            border-bottom: .2rem solid #000;
+        }
+    }
+}

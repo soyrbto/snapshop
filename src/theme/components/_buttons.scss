@@ -1,0 +1,19 @@
+/*
+ * Buttons
+ */
+
+
+/* General Buttons */
+
+.btn {
+    --border-radius: 12px;
+    line-height: 32px;
+    // Dark Button
+    &--dark {
+        @include button-style( var(--ion-color-deep), var(--ion-color-deep), var(--ion-color-deep), var(--ion-color-deep), var(--ion-color-light), auto, auto, 100%, 62px, normal, 16px);
+    }
+    // Light Button
+    &--light {
+        @include button-style( rgba(var(--ion-color-light-rgb), .27), rgba(var(--ion-color-light-rgb), .27), rgba(var(--ion-color-light-rgb), .27), rgba(var(--ion-color-light-rgb), .27), var(--ion-color-light), auto, auto, 100%, 62px, normal, 16px);
+    }
+}

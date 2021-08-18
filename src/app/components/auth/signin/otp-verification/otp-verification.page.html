@@ -1,0 +1,26 @@
+<ion-header class="ion-no-border">
+    <div class="line"></div>
+</ion-header>
+
+<ion-content class="container">
+    <h1 class="title-top container__title">OTP Verification</h1>
+    <p class="paragraph container__text">Check your SMS messages. We’ve sent you the PIN at 012-345-6789</p>
+    <div class="container__wrapper">
+        <ion-grid>
+            <ion-row class="text-center">
+                <ion-col>
+                    <ion-input class="container__wrapper__otp" [ngClass]="{'container__wrapper__otp': value != ''}" #otp1 type="number" placeholder="●" pattern="[0-9]*" required="true" maxLength="1" (keyup)="otpController($event, otp2, '')">
+                    </ion-input>
+                    <ion-input class="container__wrapper__otp" [ngClass]="{'container__wrapper__otp': value != ''}" #otp2 type="number" placeholder="●" pattern="[0-9]*" required="true" maxLength="1" (keyup)="otpController($event, otp3, otp1)">
+                    </ion-input>
+                    <ion-input class="container__wrapper__otp" [ngClass]="{'container__wrapper__otp': value != ''}" #otp3 type="number" placeholder="●" pattern="[0-9]*" required="true" maxLength="1" (keyup)="otpController($event, otp4, otp2)">
+                    </ion-input>
+                    <ion-input class="container__wrapper__otp" [ngClass]="{'container__wrapper__otp': value != ''}" #otp4 type="number" placeholder="●" pattern="[0-9]*" required="true" maxLength="1" (keyup)="otpController($event, '', otp3)">
+                    </ion-input>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <ion-button expand="block" (click)="_closeModal()" class="btn-black container__btn">Sign In</ion-button>
+</ion-content>

@@ -1,0 +1,40 @@
+@import '../../../theme/abstracts/mixins';
+ion-content {
+    --background: url(../../../assets/images/welcome/bg-welcome.png) no-repeat top center / cover;
+    background-color: var(--ion-color-primary);
+    img {
+        @include rwd($small_min, $small_max) {
+            width: 16rem;
+        }
+    }
+    .title {
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 50px;
+        margin-top: 30px;
+        color: var(--ion-color-secondary);
+        span {
+            color: var(--ion-color-light);
+        }
+        @include rwd($small_min, $small_max) {
+            font-size: 40px;
+        }
+    }
+    .text {
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 10px;
+        color: var(--ion-color-light);
+        @include rwd($small_min, $small_max) {
+            font-size: 16px;
+        }
+    }
+    .btn--custom-margin-top {
+        margin-top: 10px;
+    }
+    ion-button {
+        @include rwd($small_min, $small_max) {
+            height: 60px !important;
+        }
+    }
+}

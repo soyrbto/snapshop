@@ -1,0 +1,27 @@
+@import "../abstracts/mixins";
+
+/*
+ * Swipper
+ * Override swiper component
+ */
+
+ion-slides.ion-slides-onboarding {
+    .swiper-pagination {
+        bottom: 6vh;
+        padding-left: 1.3rem;
+        text-align: left;
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 5px;
+            border-radius: 2.5px;
+            opacity: 1;
+            background-color: var(--ion-color-light);
+        }
+        .swiper-pagination-bullet-active {
+            width: 21px;
+            height: 5px;
+            background-color: var(--ion-color-secondary);
+            border-radius: 2.5px;
+        }
+    }
+}
