@@ -20,6 +20,14 @@ ion-content {
                 @include respond(phone-414) {
                     top: 2vh;
                 }
+
+                @include respond(phone-375x667) {
+                    top: 4vh;
+                }
+
+                @include respond(phone-375x667) {
+                    top: 2vh;
+                }
             }
             &__content {
                 &__title {
@@ -32,6 +40,15 @@ ion-content {
                     @include respond(phone-414) {
                         font-size: 32px;
                     }
+
+                    @include respond(phone-375x667) {
+                        margin-top: 26px;
+                    }
+
+                    @include respond(phone-320) {
+                        font-size: 24px;
+                    }
+
                     span {
                         color: var(--ion-color-secondary);
                     }
@@ -49,6 +66,11 @@ ion-content {
                         font-size: 16px;
                         padding-bottom: 4rem;
                     }
+
+                    @include respond(phone-320) {
+                        font-size: 12px;
+                        padding-bottom: 3.5rem;
+                    } 
                 }
             }
         }
@@ -80,6 +102,26 @@ ion-fab {
         width: 13.5rem;
         height: 13.5rem;
     }
+
+    @include respond(phone-375x812) {
+        top: -9rem;
+        right: -9rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    @include respond(phone-375x812) {
+        top: -8rem;
+        right: -8rem;
+        width: 13.5rem;
+        height: 13.5rem;
+    }
+
+    @include respond(phone-320) {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+
     p {
         position: absolute;
         font-size: 15px;
@@ -90,6 +132,21 @@ ion-fab {
         @include respond(phone-414) {
             bottom: 1.8rem;
             left: 2.5rem;
+        }
+
+        @include respond(phone-375x812) {
+            bottom: 1.7rem;
+            left: 2.5rem;
+        }
+
+        @include respond(phone-375x667) {
+            bottom: 1.75rem;
+            left: 2.6rem;
+        }
+
+        @include respond(phone-320) {
+            bottom: 1.3rem;
+            left: 2.1rem;
         }
     }
 }
